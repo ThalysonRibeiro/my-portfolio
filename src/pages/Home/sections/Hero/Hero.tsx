@@ -1,8 +1,8 @@
 import { Box, Container, Grid, Typography, styled } from "@mui/material"
 import Avatar from "../../../../assets/images/img-eu.jpg"
-import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import StyledButton from "../../../../components/StyletButton/StyledButton";
+// import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
+// import MailOutlineIcon from '@mui/icons-material/MailOutline';
+// import StyledButton from "../../../../components/StyletButton/StyledButton";
 import { AnimatedBackground } from "../../../../components/StyletButton/AnimatedBackground/AnimatedBackground";
 
 const Hero = () => {
@@ -37,7 +37,7 @@ const Hero = () => {
                                 <Box position="absolute" width={"150%"} top={-100} right={0}>
                                     <AnimatedBackground />
                                 </Box>
-                                <Box position="absolute" textAlign="center">
+                                <Box position={"relative"} textAlign="center">
                                     <StyledImg src={Avatar} />
                                 </Box>
                             </Box>
@@ -45,10 +45,10 @@ const Hero = () => {
                         <Grid item xs={12} md={7}>
                             <Typography color="primary.contrastText" variant="h1" textAlign={"center"} pb={2}>Thalyson Ribeiro</Typography>
                             <Typography color="primary.contrastText" variant="h2" textAlign={"center"}>Eu sou engenheiro de software</Typography>
-                            <Grid container display={"flex"} justifyContent={"center"} spacing={3} pt={3}>
+                            {/* <Grid container display={"flex"} justifyContent={"center"} spacing={3} pt={3}>
                                 <Grid item xs={12} md={4} display={"flex"} justifyContent={"center"}>
 
-                                    <StyledButton>
+                                    <StyledButton onClick={() => console.log("download")}>
                                         <CloudDownloadIcon />
                                         <Typography>
                                             Download CV
@@ -56,14 +56,14 @@ const Hero = () => {
                                     </StyledButton>
                                 </Grid>
                                 <Grid item xs={12} md={4} display={"flex"} justifyContent={"center"}>
-                                    <StyledButton>
+                                    <StyledButton onClick={() => console.log("contact")}>
                                         <MailOutlineIcon />
                                         <Typography>
                                             Contate-me
                                         </Typography>
                                     </StyledButton>
                                 </Grid>
-                            </Grid>
+                            </Grid> */}
                         </Grid>
                     </Grid>
                 </Container>
